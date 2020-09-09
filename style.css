@@ -1,0 +1,272 @@
+*{
+  margin : 0px;
+  padding: 0px;
+  outline: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255); 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6e6e6e; 
+  cursor: pointer;
+}
+
+body{
+  background-color: #141414;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.logo{
+  color: white;
+  flex:1;
+  margin: 20px 20px;
+}
+.center{
+  display: flex;
+}
+.ul{
+  list-style: none;
+  display: flex;
+}
+.li{
+  margin: 0px 30px;
+}
+.a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.list{
+  margin: 25px 20px;
+}
+.big-text{
+  font-size: 260px;
+   color: white;
+   width: 100%;
+   text-shadow: 10px 50px 10px    rgba(0, 0, 0, 0.404);
+   
+}
+.center-text{
+  display: grid;
+  height: 70vh;
+  place-content: center;
+}
+
+.intro,.web-des{
+  text-align:right;
+  transform: translateX(-150px);
+  color: rgb(134, 134, 134);
+}
+.web-des{
+  transform: translateX(-50px);
+}
+.pos > i{
+  font-size: 20px;
+  margin: 10px 40px;
+}
+.pos{
+  margin-top: -50px;
+}
+.center-mouse{
+  width: 38px;
+  height: 80px;
+  border-radius: 50px;
+  border: 2px solid white;
+  text-align: center;
+  margin: auto;
+  margin-top: -70px;
+}
+.move{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 50px;
+  transition: 3s ease-in-out;
+  animation: 1.3s move infinite ;
+  position: relative;
+}
+@keyframes move{
+  0%{
+    top: 0px;
+  }
+  
+  100%{
+    width: 2px;
+    height: 20px;
+    top: 40px;
+    opacity: 0;
+  }
+}
+
+.scroll{
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+.page{
+  margin-top: 150px;
+}
+.image-center{ 
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}
+img{
+  cursor: pointer;
+}
+
+.keet {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+img:hover{
+  box-shadow: 1px 1px 10px 1px rgb(53, 53, 53);
+  z-index: 1;
+}
+.lorem{
+  text-align: center;
+  color: rgb(121, 121, 121);
+  margin-bottom: 10px;
+ 
+}
+.cen-btn{
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.btn{
+  width: 250px;
+  height: 48px;
+  background-color: #141414;
+  border: none;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.726);
+  margin-bottom: 50px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  color: rgb(184, 184, 184);
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.end{
+  margin-bottom: 50px;
+}
+.end-send{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  grid-column-gap: 150px;
+  flex-wrap: wrap;
+}
+.l{
+  color: rgb(185, 185, 185);
+  max-width: 430px;
+}
+.co{
+  font-size: 40px;
+   margin-top: 500ox;
+  color: white;
+}
+.add{
+  color: white;
+  margin: 10px auto;
+}
+.add-t{
+   color: rgb(184, 184, 184);
+}
+
+.con-f{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: white;
+}
+.in{
+  width: 280px;
+  height: 30px;
+  margin: 20px auto;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+  input[type="button"]{
+  width: 180px;
+  height: 38px;
+  background-color: #141414;
+  border: none;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.726);
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
+  color: rgb(184, 184, 184);
+  cursor: pointer;
+  font-weight: bold;
+}
+form{
+  margin-bottom: 30px;
+}
+.box2{
+  width: 500px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 0px black;
+}
+.box1{
+  width: 500px;
+  margin-bottom: 50px;
+  
+}
+textarea{
+  resize: vertical;
+}
+
+.overflow{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  background-color: rgba(59, 59, 59, 0.185);
+  left: 0;
+  
+}
+.layer-1{
+  background-color: rgb(228, 228, 228);
+  flex: 1;
+ 
+}
+.layer-2{
+  background-color: rgb(228, 228, 228);
+  flex: 1;
+ 
+}
+.layer-3{
+  background-color: rgb(228, 228, 228);
+  flex: 1;
+ 
+}
